@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+   float marks[100],tot=0.0,avg;
+   int n,i;
+   printf("Enter The Number Of Students");
+   scanf("%d",&n);
+   printf("Enter Marks");
+   for(i=0;i<n;i++)
+   {
+      scanf("%f",&marks[i]);
+      tot=tot+marks[i];
+   }
+   avg=tot/n;
+   printf("avg=%f \t tot=%f",avg,tot);
+   return 0;
+   }
